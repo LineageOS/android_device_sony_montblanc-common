@@ -7,7 +7,6 @@ on init
 
     # create mountpoints
     mkdir /mnt/sdcard 0000 system system
-    symlink /mnt/sdcard /sdcard
 
     mkdir /modemfs 0771 system system
 
@@ -34,7 +33,7 @@ on init
 
     # Create symlink
     symlink /mnt/sdcard /sdcard
-    symlink /mnt/external_sd /external_sd
+    mkdir /external_sd 0000 system system
     symlink /mnt/usbdisk /usbdisk
 
     # chown for sim detect
