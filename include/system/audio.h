@@ -370,7 +370,7 @@ typedef enum {
     AUDIO_DEVICE_IN_VOICE_CALL            = 0x400000,
     AUDIO_DEVICE_IN_BACK_MIC              = 0x800000,
 #ifdef STE_FM
-    AUDIO_DEVICE_IN_FM_RX                 = 0x20000000,
+    AUDIO_DEVICE_IN_FM_RADIO_RX           = 0x20000000,
 #endif
 #endif
     AUDIO_DEVICE_IN_DEFAULT               = 0x80000000,
@@ -389,7 +389,7 @@ typedef enum {
                                AUDIO_DEVICE_IN_FM_RX_A2DP |
 #endif
 #ifdef STE_FM
-                               AUDIO_DEVICE_IN_FM_RX |
+                               AUDIO_DEVICE_IN_FM_RADIO_RX |
 #endif
                                AUDIO_DEVICE_IN_DEFAULT),
     AUDIO_DEVICE_IN_ALL_SCO = AUDIO_DEVICE_IN_BLUETOOTH_SCO_HEADSET,
