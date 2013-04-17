@@ -154,6 +154,8 @@ on post-fs-data
     write /sys/devices/platform/musb-ux500.0/musb-hdrc/gadget/lun0/nofua 1
     write /sys/devices/platform/musb-ux500.0/musb-hdrc/gadget/lun1/nofua 1
 
+    rm /data/misc/dhcp/*
+
 on early-boot
     #start recovery
     exec /sbin/bootrec
